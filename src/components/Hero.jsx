@@ -1,14 +1,14 @@
-import Selfie from '../assets/sam3.png'
+import Selfie from '../assets/sam.png'
 
 const Hero = () => {
   return (
     <section
       className='flex justify-between items-center pt-20 bg-gradient-to-b from-white to-custom-blue'
       id='hero'>
-      <div className='flex flex-grow justify-center'>
-        <div className='p-8 mr-auto ml-24'>
+      <div className='max-w-screen-xl flex justify-between items-center w-full px-4 md:px-8 lg:px-16'>
+        <div className='ml-auto mr-0 md:mr-auto'>
           <h1 className='text-5xl font-light'>Sam Blaha</h1>
-          <p className='text-3xl mt-4 font-thin'>
+          <p className='text-3xl mt-4 font-extralight text-custom-dark-blue'>
             Front-End & Mobile Developer
           </p>
         </div>
