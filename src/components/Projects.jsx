@@ -14,28 +14,21 @@ const Projects = () => {
       description:
         'A website dedicated to the Castlevania series. Similar to Transylvanian Tome, but a web version! Plans on making it a companion site to the iOS app.',
       path: castlevaniaIO
-    },
-    {
-      title: 'Transylvanian Tome',
-      description:
-        ' Have you always wanted a beautiful app showcasing all of the classic Castlevania games? Well, your prayers have been answered! Download Transylvanian Tome today on the App Store.',
-      path: CV1
-    },
-    {
-      title: 'Castlevania.io',
-      description:
-        'A website dedicated to the Castlevania series. Similar to Transylvanian Tome, but a web version! Plans on making it a companion site to the iOS app.',
-      path: castlevaniaIO
     }
   ]
 
   return (
-    <section id='projects' className='p-8'>
-      <h2 className='text-4xl mb-8 text-center text-custom-dark-blue'>
-        things I am working on
-      </h2>
-      <div className='flex justify-center'>
-        <div className='max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-8'>
+    <section id='projects' className='p-8 mt-2'>
+      <div className='flex justify-center m-6'>
+        <h2 className='text-4xl mb-8 text-center text-custom-dark-blue border-b-4 border-custom-yellow'>
+          My Current Projects
+        </h2>
+      </div>
+      <div className='flex justify-center mb-8'>
+        <div
+          className={`max-w-screen-2xl grid grid-cols-1 md:grid-cols-2 ${
+            projects.length === 2 ? 'lg:grid-cols-2' : '2xl:grid-cols-4'
+          } gap-8`}>
           {projects.map((project, index) => (
             <div
               key={index}
@@ -43,12 +36,11 @@ const Projects = () => {
               <video
                 className='rounded-t-lg w-full'
                 src={project.path}
-                autoPlay
                 loop
                 muted
               />
               <div className='p-5'>
-                <h3 className='mb-2 text-2xl font-bold tracking-tight text-custom-dark-blue'>
+                <h3 className='mb-2 text-2xl font-bold tracking-tight text-custom-title'>
                   {project.title}
                 </h3>
                 <p className='mb-3 font-normal text-gray-500'>

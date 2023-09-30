@@ -7,8 +7,8 @@ const Hero = () => {
       id='hero'>
       <div className='max-w-screen-xl flex justify-between items-center w-full px-4 md:px-8 lg:px-16'>
         <div className='ml-auto mr-0 md:mr-auto'>
-          <h1 className='text-5xl font-light'>Sam Blaha</h1>
-          <p className='text-3xl mt-4 font-extralight text-custom-dark-blue'>
+          <h1 className='text-5xl font-light text-custom-title'>Sam Blaha</h1>
+          <p className='text-3xl mt-4 font-extralight text-white font-mono'>
             Front-End & Mobile Developer
           </p>
         </div>
