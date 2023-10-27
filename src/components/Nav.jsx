@@ -26,7 +26,11 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <a>Contact Me</a>
+              <a
+                href='#contact'
+                className='text-custom-dark-blue hover:text-custom-blue font-semibold hover:border-b-2 hover:border-custom-yellow font-mono'>
+                Contact Me
+              </a>
             </li>
             <li>
               <a

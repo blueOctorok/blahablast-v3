@@ -36,6 +36,7 @@ const Projects = () => {
               <video
                 className='rounded-t-lg w-full'
                 src={project.path}
+                autoPlay
                 loop
                 muted
               />
