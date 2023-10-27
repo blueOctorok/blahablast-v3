@@ -8,7 +8,8 @@ export default {
         'custom-dark-blue': '#0295ab',
         'custom-title': '#00788a',
         'custom-yellow': '#F5F002'
-      }
+      },
+      fontFamily: {}
     }
   },
   plugins: []
