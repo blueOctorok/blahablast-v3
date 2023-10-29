@@ -32,17 +32,17 @@ const About = () => {
       </div>
       <div className='flex flex-col lg:flex-row container space-y-10 lg:space-x-10 lg:space-y-0 min-h-[500px] items-center text-white font-extrabold'>
         <div className='flex items-center justify-center mb-6 lg:w-1/2'>
-          <h2 className=' text-5xl lg:text-6xl'>Skills</h2>
+          <h2 className='text-4xl lg:text-6xl'>Skills</h2>
         </div>
         <div className='flex pt-0 lg:pt-12 lg:w-1/2'>
-          <div className='flex flex-col text-4xl lg:text-6xl lg:mr-4 pr-4 w-full lg:w-1/2'>
+          <div className='flex flex-col text-3xl lg:text-6xl lg:mr-4 pr-4 w-full lg:w-1/2'>
             {firstHalf.map((skill, index) => (
               <div key={index} className='whitespace-nowrap'>
                 {skill}
               </div>
             ))}
           </div>
-          <div className='flex flex-col text-4xl lg:text-6xl lg:ml-4 w-full lg:w-1/2'>
+          <div className='flex flex-col text-3xl lg:text-6xl lg:ml-4 w-full lg:w-1/2'>
             {secondHalf.map((skill, index) => (
               <div key={index} className='whitespace-nowrap'>
                 {skill}
