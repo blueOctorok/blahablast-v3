@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import CV1 from '../assets/CV1.mp4'
 import castlevaniaIO from '../assets/castlevaniaIO.mp4'
 
@@ -17,6 +18,25 @@ const Projects = () => {
     }
   ]
 
+  const videoRefs = useRef([])
+
+  useEffect(() => {
+    videoRefs.current.forEach((videoRef) => {
+      const videoElement = videoRef
+
+      const handleVideoEnd = () => {
+        videoElement.currentTime = 0
+        videoElement.play()
+      }
+
+      videoElement.addEventListener('ended', handleVideoEnd)
+
+      return () => {
+        videoElement.removeEventListener('ended', handleVideoEnd)
+      }
+    })
+  }, [])
+
   return (
     <section id='projects' className='p-8 mt-2'>
       <div className='flex justify-center m-6'>
@@ -34,11 +54,13 @@ const Projects = () => {
               key={index}
               className='bg-gradient-to-b from-custom-dark-blue to-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700'>
               <video
+                ref={(el) => (videoRefs.current[index] = el)}
                 className='rounded-t-lg w-full'
                 src={project.path}
                 autoPlay
                 loop
                 muted
+                playsInline
               />
               <div className='p-5'>
                 <h3 className='mb-2 text-2xl font-bold tracking-tight text-custom-title'>

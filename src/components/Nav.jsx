@@ -57,7 +57,7 @@ const Nav = () => {
           </button>
           {/* Mobile Menu */}
           {isOpen && (
-            <ul className='flex flex-col space-y-4 absolute top-full left-0 w-full bg-white sm:hidden'>
+            <ul className='flex flex-col space-y-4 absolute top-full left-0 pl-4 w-full bg-white sm:hidden'>
               <li>
                 <a
                   href='#projects'
