@@ -96,7 +96,9 @@ const Contact = () => {
                     </div>
 
                     <div className='relative mt-4'>
-                      <button className='bg-custom-blue text-white rounded-md px-4 py-2 w-full'>
+                      <button
+                        type='submit'
+                        className='bg-custom-blue text-white rounded-md px-4 py-2 w-full'>
                         Submit
                       </button>
                     </div>
