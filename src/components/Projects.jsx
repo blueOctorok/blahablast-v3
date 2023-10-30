@@ -66,7 +66,7 @@ const Projects = () => {
                 <h3 className='mb-2 text-2xl font-bold tracking-tight text-custom-title'>
                   {project.title}
                 </h3>
-                <p className='mb-3 font-normal text-gray-500'>
+                <p className='mb-3 font-normal text-gray-600'>
                   {project.description}
                 </p>
                 <button className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-custom-dark-blue hover:bg-custom-blue'>
