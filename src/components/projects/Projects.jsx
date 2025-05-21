@@ -18,12 +18,14 @@ const Projects = () => {
       title: 'EtherGuard',
       description:
         'A full-stack blockchain application demonstrating smart contract development, React/Next.js architecture, and Web3 integration with ERC20 token analytics.',
+      link: 'https://etherguard.vercel.app/',
       tags: ['Solidity', 'React', 'Web3']
     },
     {
       title: 'Viper',
       description:
         'A modern, animated cryptocurrency memecoin website built with Next.js 14 and Framer Motion, featuring dynamic theming and interactive dashboard.',
+      link: 'https://viper-two.vercel.app/',
       tags: ['Next.js', 'Animation', 'Crypto']
     }
   ]
