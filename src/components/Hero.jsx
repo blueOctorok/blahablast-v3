@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="ml-auto mr-0 md:mr-auto">
             <h1 className="text-5xl font-light text-custom-title">Sam Blaha</h1>
             <p className="text-3xl mt-4 font-extralight text-white font-mono">
-              FullStack & Blockchain Developer
+              Blockchain Developer
             </p>
             <button
               onClick={openModal}
