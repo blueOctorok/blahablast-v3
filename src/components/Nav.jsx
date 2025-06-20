@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Hamburger from './Hamburger'
 import Resume from '../assets/Resume.pdf'
+import Cert from '../assets/blockchain-cert.pdf'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -46,6 +47,16 @@ const Nav = () => {
             </li>
             <li>
               <a
+                href={Cert}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-custom-dark-blue hover:text-custom-blue font-semibold hover:border-b-2 hover:border-custom-yellow font-mono"
+              >
+                Certificate
+              </a>
+            </li>
+            <li>
+              <a
                 href={Resume}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,6 +95,16 @@ const Nav = () => {
                   className="text-custom-dark-blue hover:text-custom-blue font-semibold hover:border-b-2 hover:border-custom-yellow font-mono"
                 >
                   Contact Me
+                </a>
+              </li>
+              <li>
+                <a
+                  href={Cert}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-custom-dark-blue hover:text-custom-blue font-semibold hover:border-b-2 hover:border-custom-yellow font-mono"
+                >
+                  Certificate
                 </a>
               </li>
               <li>
