@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'ShardSwap',
       description:
         'A decentralized peer-to-peer marketplace on Cardano for trading digital assets with AI-powered insights.',
-      link: 'https://shardswap.io',
+      link: 'https://shard-swap.xyz',
       tags: ['Cardano', 'Blockchain', 'AI']
     },
     {
